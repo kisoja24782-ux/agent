@@ -1,0 +1,22 @@
+[project]
+name = "ex-1001"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kisoja24782-ux", email = "kisoja24782@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain-openai>=1.6.7",
+    "langgraph>=1.2.12",
+    "pandas>=3.0.6",
+]
+
+[project.scripts]
+ex-1001 = "ex_1001:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
