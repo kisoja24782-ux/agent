@@ -7,4 +7,9 @@ def main() -> None:
 
     #from .mygraph import test_graph
 
-    from .mygraph import page123
+    #from .mygraph import page123
+    import asyncio
+    from .mygraph import page132
+
+    #asyncio.run(page132.ainvoke())
+    asyncio.run(page132.astream())
