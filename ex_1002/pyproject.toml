@@ -69,3 +69,9 @@ ex-1002 = "ex_1002:main"
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "colorama>=0.4.6",
+    "langgraph-cli[inmem]>=0.4.32",
+]

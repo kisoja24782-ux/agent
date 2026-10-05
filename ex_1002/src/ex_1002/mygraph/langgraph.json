@@ -1,0 +1,7 @@
+{
+    "dependencies":["."],
+    "graphs": {
+        "agent":"./src/ex_1002/mygraph/page132.py:graph"
+    },
+    "env":".env"
+}

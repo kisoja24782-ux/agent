@@ -8,8 +8,12 @@ def main() -> None:
     #from .mygraph import test_graph
 
     #from .mygraph import page123
-    import asyncio
-    from .mygraph import page132
-
+    
+    #import asyncio
+    #from .mygraph import page132
     #asyncio.run(page132.ainvoke())
-    asyncio.run(page132.astream())
+    #asyncio.run(page132.astream())
+
+    from .mygraph import page157
+    #page157.run()
+    page157.run2()
