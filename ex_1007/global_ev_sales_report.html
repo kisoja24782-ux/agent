@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Global Electric Vehicle Sales Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Global Electric Vehicle Sales (2016-2025)</h1>
+    <canvas id="evSalesChart" width="800" height="400"></canvas>
+    <script>
+        const ctx = document.getElementById('evSalesChart').getContext('2d');
+        const evSalesChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+                datasets: [{
+                    label: 'Electric Vehicle Sales',
+                    data: [770000, 1230000, 2030000, 2230000, 3190000, 6630000, 10290000, 13410000, 16460000, 20700000],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Global Electric Vehicle Sales Data from 2016 to 2025'
+                    }
+                }
+            }
+        });
+    </script>
+
+    <h2>Summary Report</h2>
+    <p>This report provides an overview of the global electric vehicle sales from 2016 to 2025. The data shows a remarkable growth in the adoption of electric vehicles worldwide.</p>
+
+    <h3>Key Highlights</h3>
+    <ul>
+        <li><strong>2016:</strong> 770,000 vehicles sold</li>
+        <li><strong>2017:</strong> 1,230,000 vehicles sold</li>
+        <li><strong>2018:</strong> 2,030,000 vehicles sold</li>
+        <li><strong>2019:</strong> 2,230,000 vehicles sold</li>
+        <li><strong>2020:</strong> 3,190,000 vehicles sold</li>
+        <li><strong>2021:</strong> 6,630,000 vehicles sold</li>
+        <li><strong>2022:</strong> 10,290,000 vehicles sold</li>
+        <li><strong>2023:</strong> 13,410,000 vehicles sold</li>
+        <li><strong>2024:</strong> 16,460,000 vehicles sold</li>
+        <li><strong>2025:</strong> 20,700,000 vehicles sold</li>
+    </ul>
+
+    <h3>Markets Insights</h3>
+    <p>China leads the market with approximately 62% of global EV sales in 2025. Europe accounts for over 25% of new car sales being electric, while in the US, 10% of new car sales are electric and hybrids.</p>
+
+    <h3>Future Outlook</h3>
+    <p>It is anticipated that by 2026, global passenger EV sales will reach about 23.3 million, comprising 27% of all new cars. By 2035, over half of all passenger vehicles are expected to be electric.</p>
+
+    <h3>Sources</h3>
+    <ul>
+        <li>IEA's Global EV Outlook reports</li>
+        <li>BloombergNEF analyses</li>
+        <li>Virta's Global Electric Vehicle Market reports</li>
+    </ul>
+
+</body>
+</html>

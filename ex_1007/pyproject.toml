@@ -8,8 +8,13 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "langchain-community>=0.4.2",
+    "langchain-openai>=1.6.7",
+    "langchain-tavily>=0.2.18",
     "langgraph>=1.2.14",
     "python-dotenv>=1.2.4",
+    "supabase>=2.32.0",
 ]
 
 [project.scripts]
@@ -18,3 +23,9 @@ ex-1007 = "ex_1007:main"
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "colorama>=0.4.6",
+    "langgraph-cli[inmem]>=0.4.32",
+]
