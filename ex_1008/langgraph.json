@@ -1,0 +1,7 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+        "rag_agent": "./src/ex_1008/supervisor_agent_triple/make_graph.py:graph"
+    },
+    "env": ".env"
+}
