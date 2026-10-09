@@ -1,11 +1,11 @@
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph import MessagesState
 
-from planning_agent import planning_node
-from supervisor_agent import supervisor_node
-from canvas_agent import canvas_node
-from research_agent import research_node
-from settings import State
+from ex_1009.supervisor_planning_agent.planning_agent import planning_node
+from ex_1009.supervisor_planning_agent.supervisor_agent import supervisor_node
+from ex_1009.supervisor_planning_agent.canvas_agent import canvas_node
+from ex_1009.supervisor_planning_agent.research_agent import research_node
+from ex_1009.supervisor_planning_agent.settings import State
 
 graph_builder = StateGraph(State, input_schema= MessagesState, output_schema= State)
 
